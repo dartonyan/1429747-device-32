@@ -119,6 +119,8 @@ a {
 .logo-link {
   display: block;
   margin-top: -73px;
+  width: 145px;
+  height: 36px;
 }
 
 .page-header .logo {
