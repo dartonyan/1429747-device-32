@@ -38,6 +38,7 @@ html {
 
 body {
   display: flex;
+  min-width: 1440px;
   flex-direction: column;
   margin: 0;
   padding-top: 40px;
@@ -86,7 +87,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .button {
   font-family: "Raleway", sans-serif;
@@ -424,6 +424,12 @@ a {
 /* Catalog page  */
 
 /* Breadcrumbs */
+
+.breadcrumbs-header {
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
 .breadcrumbs {
   font-size: 16px;
   line-height: 19px;
@@ -436,16 +442,95 @@ a {
 }
 
 /* Catalog */
-.catalog-products {
+.catalog {
   color: #000000;
   font-size: 16px;
   line-height: 19px;
 }
 
+.catalog-columns {
+  display: flex;
+}
+
+.catalog-filter-bookmark,
+.catalog-filter-controls {
+  min-width: 328px;
+  flex-grow: 1;
+  flex-basis: 328px;
+}
+
+.catalog-sort-controls,
+.catalog-products {
+  min-width: 832px;
+  flex-grow: 1;
+  flex-basis: 832px;
+}
+
+.catalog-filter-bookmark,
+.catalog-sort-controls {
+  height: 70px;
+}
+
+.catalog-sort-controls,
+.catalog-filter-controls {
+  background-color: #ebebeb;
+}
+
+.catalog-filter-bookmark {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #dcdcdd;
+}
+
+.catalog-filter-bookmark .catalog-title {
+  margin-right: 169px;
+}
+
+.catalog-filter-controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .catalog-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog-sort-form {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  max-width: 832px;
+}
+
+.catalog-sort-form .catalog-title {
+  margin-left: 72px;
+}
+
+.catalog-sort-by {
+  margin-left: 51px;
+}
+
+.catalog-sort-buttons {
+  margin-left: auto;
+}
+
+.catalog-filters {
+  width: 200px;
+  margin-top: 71px;
+  margin-right: 69px;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 45px;
 }
 
 .catalog-filter-title {
@@ -453,6 +538,14 @@ a {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+}
+
+.product-list {
+  margin: 0;
+  padding: 69px 0 0 72px;
+  list-style-type: none;
+  max-width: 832px;
+  box-sizing: border-box;
 }
 
 .product-title-link {
@@ -563,7 +656,6 @@ a {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 .footer-social-list {
   display: flex;
