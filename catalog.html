@@ -15,15 +15,14 @@
 
       <!-- Меню пользователя -->
       <nav class="navigation-user">
+        <form class="site-search" action="https://echo.htmlacademy.ru/">
+          <button class="search visually-hidden" type="submit">Искать</button>
+          <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search">
+        </form>
         <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <form class="site-search" action="https://echo.htmlacademy.ru/">
-              <button class="search visually-hidden" type="submit">Искать</button>
-              <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search">
-            </form>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Войти</a>
+          <li class="navigation-user-item navigation-user-logout">
+            <span class="navigation-username">Коля Петухов</span>
+            <a class="navigation-user-link" href="#">Выйти</a>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Сравнить</a>
@@ -39,10 +38,12 @@
 
       <!-- Главное меню -->
       <nav class="navigation-main">
-        <ul class="navigation-main-list">
+        <ul class="navigation-catalog-list">
           <li class="navigation-main-item">
             <a class="navigation-main-link" href="catalog.html">Каталог товаров</a>
           </li>
+        </ul>
+        <ul class="navigation-main-list">
           <li class="navigation-main-item">
             <a class="navigation-main-link" href="#">Доставка</a>
           </li>
@@ -64,7 +65,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
-          <li>
+          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
@@ -220,7 +221,7 @@
             <!-- Pagination -->
             <ul class="pagination">
               <li class="pagination-item">
-                <button class="button pagination-prev pagination-disabled">Назад</a>
+                <button class="button pagination-prev pagination-disabled">Назад</button>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -238,7 +239,7 @@
                 <a class="pagination-link" href="#">15</a>
               </li>
               <li class="pagination-item">
-                <button class="button pagination-next pagination-disabled">Вперёд</a>
+                <button class="button pagination-next pagination-disabled">Вперёд</button>
               </li>
             </ul>
           </div>

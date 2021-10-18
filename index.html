@@ -14,13 +14,11 @@
 
       <!-- Меню пользователя -->
       <nav class="navigation-user">
+        <form class="site-search" action="https://echo.htmlacademy.ru/">
+          <button class="search visually-hidden" type="submit">Искать</button>
+          <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search">
+        </form>
         <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <form class="site-search" action="https://echo.htmlacademy.ru/">
-              <button class="search visually-hidden" type="submit">Искать</button>
-              <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search">
-            </form>
-          </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">Войти</a>
           </li>
@@ -38,10 +36,12 @@
 
       <!-- Главное меню -->
       <nav class="navigation-main">
-        <ul class="navigation-main-list">
+        <ul class="navigation-catalog-list">
           <li class="navigation-main-item">
             <a class="navigation-main-link" href="catalog.html">Каталог товаров</a>
           </li>
+        </ul>
+        <ul class="navigation-main-list">
           <li class="navigation-main-item">
             <a class="navigation-main-link" href="#">Доставка</a>
           </li>
@@ -77,24 +77,26 @@
             <div class="slide-column">
               <h3 class="slide-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <button class="button button-accross">Подробнее</button>
-              <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
+              <div class="slide-controls">
+                <button class="button button-accross">Подробнее</button>
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
               <ul class="feature">
                 <li class="feature-item">
                   <span class="feature-parameter">800 м</span>
@@ -125,24 +127,26 @@
             <div class="slide-column">
               <h3 class="slide-title">Худеем правильно!</h3>
               <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <button class="button button-accross">Подробнее</button>
-              <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
+              <div class="slide-controls">
+                <button class="button button-accross">Подробнее</button>
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
               <ul class="feature">
                 <li class="feature-item">
                   <span class="feature-parameter">48 часов</span>
@@ -169,24 +173,26 @@
             <div class="slide-column">
               <h3 class="slide-title">Делай селфи, как Бен Стиллер!</h3>
               <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <button class="button button-accross">Подробнее</button>
-              <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">1 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button" type="button">
-                    <span class="visually-hidden">2 фото</span>
-                  </button>
-                </li>
-                <li class="slider-pagination-item">
-                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                    <span class="visually-hidden">3 фото</span>
-                  </button>
-                </li>
-              </ol>
+              <div class="slide-controls">
+                <button class="button button-accross">Подробнее</button>
+                <ol class="slider-pagination">
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">1 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                      <span class="visually-hidden">2 фото</span>
+                    </button>
+                  </li>
+                  <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                      <span class="visually-hidden">3 фото</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
               <ul class="feature">
                 <li class="feature-item">
                   <span class="feature-parameter">8,5 м</span>
@@ -308,9 +314,13 @@
       <section class="delivery box-center">
         <h2 class="visually-hidden">Доставим редкий товар</h2>
         <button class="button button-delivery">
-          <span class="visually-hidden">Иконка кнопки</span>
-          Доставим редкий товар под заказ
-          <span class="visually-hidden">Иконка информации</span>
+          <span class="button-delivery-icon">
+            <span class="visually-hidden">Иконка кнопки</span>
+          </span>
+            Доставим редкий товар под заказ
+          <span class="button-delivery-info">
+            <span class="visually-hidden">Иконка информации</span>
+          </span>
         </button>
       </section>
 
@@ -321,9 +331,9 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="about-list">
-            <li class="about-item">Меловые линии</li>
-            <li class="about-item">СДИК</li>
-            <li class="about-item">ТоксБерри</li>
+            <li class="about-list-item"><span>Меловые линии</span></li>
+            <li class="about-list-item"><span>СДИК</span></li>
+            <li class="about-list-item"><span>ТоксБерри</span></li>
           </ul>
           <a class="button button-accross" href="#">Подробнее о нас</a>
         </section>
@@ -334,8 +344,7 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
           <h3 class="contacts-sub-title">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
-            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br><a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
           </address>
           <h3 class="contacts-sub-title">Время работы</h3>
           <ul class="contacts-schedule">
