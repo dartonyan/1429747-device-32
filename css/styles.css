@@ -817,12 +817,15 @@ a {
 .footer-top,
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-top {
   margin-top: 35px;
   margin-bottom: 49px;
+}
+
+.footer-bottom {
+  justify-content: space-between;
 }
 
 .footer-ha-logo {
@@ -856,13 +859,26 @@ a {
   line-height: 30px;
 }
 
+.navigation-footer {
+  margin-left: 114px;
+  margin-right: auto;
+}
+
 .navigation-footer-list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 458px;
   list-style: none;
-  justify-content: space-between;
+}
+
+.navigation-footer-item {
+  margin-right: 20px;
+}
+
+.navigation-footer-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .navigation-footer-link {
@@ -877,6 +893,39 @@ a {
   text-decoration: none;
 }
 
+.footer-decor {
+  margin: 0;
+  width: 80px;
+  height: 7px;
+  background: #ffc700;
+  align-self: center;
+  border: 0;
+}
+
+.footer-social {
+  width: 150px;
+  justify-content: center;
+}
+
 .footer-social-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.footer-social-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.social-button {
+  text-decoration: none;
 }
