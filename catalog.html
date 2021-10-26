@@ -12,49 +12,53 @@
       <a class="logo-link" href="index.html">
         <img class="logo" src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина электроники «Девайс»">
       </a>
-
-      <!-- Меню пользователя -->
-      <nav class="navigation-user">
+      <div class="page-header-content">
+        <!-- Форма поиска -->
         <form class="site-search" action="https://echo.htmlacademy.ru/">
           <button class="search visually-hidden" type="submit">Искать</button>
           <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search">
         </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item navigation-user-logout">
-            <span class="navigation-username">Коля Петухов</span>
-            <a class="navigation-user-link" href="#">Выйти</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Количество товаров в корзине</span>
-              Корзина
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Главное меню -->
-      <nav class="navigation-main">
-        <ul class="navigation-catalog-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="catalog.html">Каталог товаров</a>
-          </li>
-        </ul>
-        <ul class="navigation-main-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <!-- Меню пользователя -->
+        <nav>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item navigation-user-logout">
+              <span class="navigation-username">Коля Петухов</span>
+              <a class="navigation-user-link" href="#">Выйти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Количество товаров в корзине</span>
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Меню каталога -->
+        <nav>
+          <ul class="navigation-catalog-list">
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="catalog.html">Каталог товаров</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Главное меню -->
+        <nav>
+          <ul class="navigation-main-list">
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container main-inner">
@@ -179,42 +183,50 @@
               <li class="product-card">
                 <img class="product-card-image no-photo" src="img/catalog/product-1.jpg" width="360" height="380"
                   alt="Нет фото для любительская селфи-палка">
-                <a href="#" class="button">Подробнее</a>
-                <h3>
-                  <a href="#" class="product-title-link">Любительская селфи-палка</a>
-                </h3>
-                <span class="product-card-price">500 ₽</span>
+                <!-- <a href="#" class="button">Подробнее</a> -->
+                <div class="product-card-bottom">
+                  <h3 class="product-title">
+                    <a href="#" class="product-title-link">Любительская селфи-палка</a>
+                  </h3>
+                  <span class="product-card-price">500 ₽</span>
+                </div>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/catalog/product-2.jpg" width="360" height="380"
                     alt="Профессиональная селфи-палка">
                 </a>
-                <h3>
-                  <a href="#" class="product-title-link">Любительская селфи-палка</a>
-                </h3>
-                <span class="product-card-price">1 500 ₽</span>
+                <div class="product-card-bottom">
+                  <h3 class="product-title">
+                    <a href="#" class="product-title-link">Профессиональная селфи-палка</a>
+                  </h3>
+                  <span class="product-card-price">1 500 ₽</span>
+                </div>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/catalog/product-3.jpg" width="360" height="380"
                     alt="Непотопляемая селфи-палка">
                 </a>
-                <h3>
-                  <a href="#" class="product-title-link">Непотопляемая селфи-палка</a>
-                </h3>
-                <span class="product-card-price">2 500 ₽</span>
+                <div class="product-card-bottom">
+                  <h3 class="product-title">
+                    <a href="#" class="product-title-link">Непотопляемая селфи-палка</a>
+                  </h3>
+                  <span class="product-card-price">2 500 ₽</span>
+                </div>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
-                  <span class="product-card-new-label">NEW</span>
+                  <!-- <span class="product-card-new-label">NEW</span> -->
                   <img class="product-card-image" src="img/catalog/product-4.jpg" width="360" height="380"
                     alt="Селфи-палка «Следуй за мной»">
                 </a>
-                <h3>
-                  <a href="#" class="product-title-link">Селфи-палка «Следуй за мной»</a>
-                </h3>
-                <span class="product-card-price">4 900 ₽</span>
+                <div class="product-card-bottom">
+                  <h3 class="product-title">
+                    <a href="#" class="product-title-link">Селфи-палка «Следуй за мной»</a>
+                  </h3>
+                  <span class="product-card-price">4 900 ₽</span>
+                </div>
               </li>
             </ul>
             <button class="button more-products" type="button">Загрузить еще</button>
@@ -275,22 +287,26 @@
           </address>
         </div>
         <div class="footer-bottom">
+          <hr class="footer-decor">
           <section class="footer-social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="social-button" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Facebook</span>
+                  F
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="social-button" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм</span>
+                  I
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="social-button" href="https://www.twitter.com/htmlacademy">
                   <span class="visually-hidden">Твиттер</span>
+                  T
                 </a>
               </li>
             </ul>
