@@ -1206,12 +1206,12 @@ a {
 
 .breadcrumbs-link {
   color: inherit;
-  padding: 6px 12px;
   text-decoration: none;
 }
 
 .breadcrumbs-link:focus {
   outline: 5px solid #af4fff;
+  outline-offset: 5px;
 }
 
 .breadcrumbs-link[href]:hover {
