@@ -13,7 +13,7 @@
       </a>
       <div class="page-header-content">
         <!-- Форма поиска -->
-        <form class="site-search" action="https://echo.htmlacademy.ru/">
+        <form class="site-search" action="https://echo.htmlacademy.ru/" method="post">
           <input class="site-search-field" name="search" placeholder="Поиск по сайту" type="search" required>
           <button class="button-search" type="submit">Найти</button>
           <svg class="site-search-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -59,12 +59,7 @@
         <nav>
           <ul class="navigation-catalog-list">
             <li>
-              <div class="navigation-catalog-group">
-                <a class="navigation-main-link" href="catalog.html">Каталог товаров</a>
-                <button class="button-catalog" type="button">
-                  <span class="visually-hidden">Открыть подменю каталога товаров</span>
-                </button>
-              </div>
+                <a class="navigation-main-link catalog-link" href="catalog.html">Каталог товаров</a>
             </li>
           </ul>
         </nav>
@@ -109,23 +104,6 @@
               <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slide-controls">
                 <a class="button button-accross" href="#">Подробнее</a>
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                </ol>
               </div>
               <ul class="feature">
                 <li class="feature-item">
@@ -159,23 +137,6 @@
               <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <div class="slide-controls">
                 <a class="button button-accross" href="#">Подробнее</a>
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                </ol>
               </div>
               <ul class="feature">
                 <li class="feature-item">
@@ -205,23 +166,6 @@
               <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <div class="slide-controls">
                 <a class="button button-accross" href="#">Подробнее</a>
-                <ol class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                </ol>
               </div>
               <ul class="feature">
                 <li class="feature-item">
@@ -240,6 +184,23 @@
             </div>
           </div>
         </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ol>
       </section>
 
       <!-- Категории -->
@@ -247,50 +208,32 @@
         <h2 class="visually-hidden">Категории магазина</h2>
         <ul class="categories-list">
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img">
-                <img src="img/categories/vr.svg" width="97" height="55" alt="Очки виртуальной реальности">
-              </span>
+            <a class="category-link category-icon-vr" href="#">
               Виртуальная реальность
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img category-img-bottom">
-                <img src="img/categories/monopods.svg" width="86" height="117" alt="Монопод с телефоном">
-              </span>
+            <a class="category-link category-icon-monopod" href="#">
               Моноподы для селфи
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img">
-                <img src="img/categories/cameras.svg" width="71" height="87" alt="Камера">
-              </span>
+            <a class="category-link category-icon-camera" href="#">
               Экшн-камеры
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img">
-                <img src="img/categories/bracelets.svg" width="108" height="65" alt="Браслет для фитнеса">
-              </span>
+            <a class="category-link category-icon-bracelet" href="#">
               Фитнес-браслеты
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img">
-                <img src="img/categories/watch.svg" width="56" height="98" alt="Часы">
-              </span>
+            <a class="category-link category-icon-watch" href="#">
               Умные часы
             </a>
           </li>
           <li class="category-item">
-            <a class="category-link" href="#">
-              <span class="category-img">
-                <img src="img/categories/quadcopters.svg" width="132" height="69" alt="Квадракоптер с камерой">
-              </span>
+            <a class="category-link category-icon-quadrocopter" href="#">
               Квадрокоптеры
             </a>
           </li>
@@ -304,7 +247,7 @@
           <div class="services-wrapper">
             <ul class="services-tab-list">
               <li class="services-tab-item">
-                <button class="button button-accross button-active button-service-active" type="button"><span>Доставка</span></button>
+                <button class="button button-accross button-service-active" type="button"><span>Доставка</span></button>
               </li>
               <li class="services-tab-item">
                 <button class="button button-accross" type="button"><span>Гарантия</span></button>
@@ -321,7 +264,7 @@
                 </div>
                 <img src="img/tabs/delivery.svg" width="136" height="164" alt="Почтальон с посылкой">
               </li>
-              <li class="services-item">
+              <!-- <li class="services-item">
                 <div class="services-about">
                   <h3 class="services-title">Гарантия</h3>
                   <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
@@ -334,7 +277,7 @@
                   <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
                 </div>
                 <img src="img/tabs/credit.svg" width="156" height="188" alt="Почтальон с кредитной картой">
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
