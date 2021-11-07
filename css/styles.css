@@ -184,7 +184,7 @@ a {
 /* Header */
 .page-header {
   position: relative;
-  padding: 50px 60px 53px 60px;
+  padding: 50px 60px 38px 60px;
   box-sizing: border-box;
   color: #000000;
   font-size: 16px;
@@ -210,7 +210,7 @@ a {
   display: grid;
   grid-template-columns: 516px 1fr;
   column-gap: 24px;
-  row-gap: 44px;
+  row-gap: 29px;
   align-items: center;
 }
 
@@ -455,20 +455,7 @@ a {
   outline-offset: 10px;
 }
 
-.navigation-catalog-list .button-catalog {
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
-  cursor: pointer;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  background: url("../img/plus.svg") no-repeat 50% 50%;
-  opacity: 0.2;
-}
-
-.navigation-main-link.catalog-link::after {
-  position: absolute;
-  right: -64px;
+.navigation-catalog-link::after {
   display: block;
   width: 50px;
   height: 50px;
@@ -481,7 +468,7 @@ a {
   content: "";
 }
 
-.navigation-main-link.catalog-link:hover::after {
+.navigation-catalog-link:hover::after {
   opacity: 1;
   background: url("../img/minus.svg") no-repeat 50% 50%;
 }
@@ -528,14 +515,6 @@ a {
 .slide {
   display: flex;
   flex-direction: column;
-}
-
-/* Скрываю все слайды */
-.slider .slide:not(.slider .slide:first-of-type) {
-  display: none;
-}
-.slider:hover .slide:not(.slider .slide:first-of-type) {
-  display: flex;
 }
 
 .slide-number {
@@ -880,14 +859,6 @@ a {
 .services-item {
   display: flex;
   margin-bottom: 139px;
-}
-
-/* Чтобы скрыть остальные услуги */
-.services .services-item:not(.services .services-item:first-child) {
-  display: none;
-}
-.services:hover .services-item:not(.services .services-item:first-child) {
-  display: flex;
 }
 
 .services-about {
@@ -1443,6 +1414,11 @@ a {
   display: block;
 }
 
+.product-card-more .button-accross:active {
+  opacity: 1;
+  color:rgba(0, 0, 0, 0.3);
+}
+
 .product-card-bottom {
   display: flex;
   margin-top: 32px;
@@ -1543,8 +1519,8 @@ a {
 }
 
 .pagination-link:active {
-  opacity: 0.1;
   border: 0;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1572,7 +1548,7 @@ a {
 .pagination-next:active {
   background-color: #dcdcdc;
   border: 0;
-  opacity: 0.3;
+  color:rgba(0, 0, 0, 0.3);
 }
 
 
