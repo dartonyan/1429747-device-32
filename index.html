@@ -52,6 +52,36 @@
                 </span>
                 Корзина
               </a>
+              <div class="popup popup-open popup-center">
+                <h2 class="visually-hidden">Содержимое корзины</h2>
+                <ul class="cart-item-list">
+                  <li class="cart-item">
+                    <a href="#" class="cart-item-title">Любительская селфи-палка</a>
+                    <img src="img/catalog/product-1.jpg" width="41" height="43" alt="Любительская селфи-палка">
+                    <button class="cart-item-delete">
+                      <span class="visually-hidden">Удалить "Любительская селфи-палка" из корзины</span>
+                      <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a href="#" class="cart-item-title">Профессиональная селфи-палка</a>
+                    <img src="img/catalog/product-2.jpg" width="41" height="43" alt="Профессиональная селфи-палка">
+                    <button class="cart-item-delete">
+                      <span class="visually-hidden">Удалить "Профессиональная селфи-палка" из корзины</span>
+                      <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z"/>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-total-bar">
+                  <p class="cart-total-goods">Товаров: 2</p>
+                  <p class="cart-total-price">Сумма: 2000 ₽</p>
+                </div>
+                <a href="#" class="cart-button">Открыть корзину</a>
+              </div>
             </li>
           </ul>
         </nav>
@@ -60,6 +90,40 @@
           <ul class="navigation-catalog-list">
             <li>
                 <a class="navigation-main-link navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+                <div class="sub-menu">
+                  <ul class="sub-menu-list">
+                    <li>
+                      <ul>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#">Виртуальная реальность</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#"> Моноподы для cелфи</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#">Экшн-камеры</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#">Фитнес-браслеты</a>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#">Умные часы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link" href="#">Квадрокоптеры</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
             </li>
           </ul>
         </nav>
@@ -303,7 +367,7 @@
             </svg>
           </span>
           <span class="button-delivery-text">Доставим редкий товар под заказ</span>
-          <span class="button-delivery-info">
+          <span class="button-info">
             <span class="visually-hidden">Иконка информации</span>
             <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 0H0V2H2V0Z" fill="black"/>
@@ -447,5 +511,62 @@
       </div>
     </footer>
 
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form action="https://echo.htmlacademy.ru/" class="delivery-form" method="post">
+            <div class="form-item">
+              <label for="delivery-name" class="field-label">Ваше имя:</label>
+              <div class="field-wrap icon-user">
+                <input id="delivery-name" name="name" placeholder="Имя Фаилия" class="field" type="text" required>
+              </div>
+              <div class="field-error">Пожалуйста, представьтесь</div>
+            </div>
+            <div class="form-item">
+              <label for="delivery-email" class="field-label">Ваше e-mail:</label>
+              <div class="field-wrap icon-email">
+                <input id="delivery-email" name="email" placeholder="e-mail адрес" class="field" type="email" required>
+              </div>
+              <div class="field-warning">Забавный у вас адрес</div>
+            </div>
+            <div class="form-item">
+              <label for="delivery-description" class="field-label">Что нужно привезти:</label>
+              <div class="field-wrap">
+                <input id="delivery-description" name="description" placeholder="В свободной форме" class="field" type="text">
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="delivery-count" class="field-label field-info">
+                Количество:
+              </label>
+              <div class="button-info">
+                <span class="visually-hidden">Иконка информации</span>
+                <svg aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 0H0V2H2V0Z" fill="black"/>
+                  <path d="M2 4H0V12H2V4Z" fill="black"/>
+                </svg>
+                <div class="popup popup-right">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </div>
+              </div>
+              <div class="counter">
+                <input id="delivery-count" class="counter-input" name="count" type="number" value="1" required>
+                <button class="counter-dec-btn" type="button">
+                  <span class="visually-hidden">Убавить на один товар</span>
+                </button>
+                <button class="counter-inc-btn" type="button">
+                  <span class="visually-hidden">Добавить на один товар</span>
+                </button>
+              </div>
+            </div>
+            <button class="button button-accross" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
